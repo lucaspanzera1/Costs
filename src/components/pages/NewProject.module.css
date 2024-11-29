@@ -45,8 +45,6 @@
     padding: 1rem;
 }
 
-.newProject input,
-.newProject select,
 .newProject textarea {
     width: 100%;
     padding: 0.75rem;
@@ -59,30 +57,11 @@
     transition: border-color 0.3s ease;
 }
 
-.newProject input:focus,
-.newProject select:focus,
 .newProject textarea:focus {
     outline: none;
     border-bottom-color: #fdfd96;
 }
 
-.newProject button {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #fdfd96;
-    color: #262626;
-    border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    border-radius: 4px;
-}
-
-.newProject button:hover {
-    background-color: #fafa5e;
-    transform: translateY(-3px);
-}
 
 @media (max-width: 600px) {
     .newProject h1 {

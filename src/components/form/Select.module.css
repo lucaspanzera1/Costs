@@ -1,0 +1,21 @@
+.formControl  select,
+.formControl  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(38, 38, 38, 0.3);
+    color: #262626;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+.formControl  select:focus,
+.formControl  textarea:focus {
+    outline: none;
+    border-bottom-color: #fdfd96;
+}
+.formControl label{
+    margin-bottom: .6em;
+    font-weight: bold;
+}
