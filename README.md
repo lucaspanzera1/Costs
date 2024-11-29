@@ -2,6 +2,7 @@
 ![License](https://img.shields.io/badge/lucaspanzera-Costs-yellow) ![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)</br>
 Uma plataforma completa para gerenciar seus projetos e finanças.
 
+![Costs](content/header.gif)
 
 ## Tecnologias Utilizadas 🛠️
 <div align="left">
