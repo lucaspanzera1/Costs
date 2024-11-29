@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
 
 import Container from './Container'
@@ -5,22 +6,48 @@ import Container from './Container'
 import styles from './Navbar.module.css'
 import logo from '../../img/costs_logo.png'
 
-function Navbar(){
-    return(
+function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    return (
         <nav className={styles.navbar}>
-            <Container>
-                <Link to="/">
-                    <img src={logo} alt="Costs" width="60px"></img>
+            <div className={styles.navContainer}>
+                <Link to="/" className={styles.logoContainer}>
+                    <img src={logo} alt="Costs" className={styles.logo} />
                 </Link>
-                <ul class={styles.list}>
-                    <li class={styles.item}><Link to="/">Home</Link></li>
-                    <li class={styles.item}><Link to="/projects">Projects</Link></li>
-                    <li class={styles.item}><Link to="/company">Company</Link></li>
-                    <li class={styles.item}><Link to="/newproject">NewProject</Link></li>
-                    <li class={styles.item}><Link to="/contact">Contact</Link></li>
+
+                <ul className={styles.desktopMenu}>
+                    <li className={styles.item}><Link to="/">Home</Link></li>
+                    <li className={styles.item}><Link to="/projects">Projects</Link></li>
+                    <li className={styles.item}><Link to="/company">Company</Link></li>
+                    <li className={styles.item}><Link to="/newproject">New Project</Link></li>
+                    <li className={styles.item}><Link to="/contact">Contact</Link></li>
                 </ul>
-            </Container>
+
+                <div className={styles.mobileMenuToggle} onClick={toggleMenu}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                {isMenuOpen && (
+                    <div className={styles.mobileMenu}>
+                        <ul>
+                            <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+                            <li><Link to="/projects" onClick={toggleMenu}>Projects</Link></li>
+                            <li><Link to="/company" onClick={toggleMenu}>Company</Link></li>
+                            <li><Link to="/newproject" onClick={toggleMenu}>New Project</Link></li>
+                            <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
+                        </ul>
+                    </div>
+                )}
+            </div>
         </nav>
     )
 }
-export default Navbar
+
+export default Navbar;
