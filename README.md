@@ -34,4 +34,7 @@ npm install
 
 # Inicie o servidor
 npm start
+
+# Inicie o backend
+npm run backend
 ```
