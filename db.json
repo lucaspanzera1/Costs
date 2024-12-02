@@ -43,23 +43,34 @@
       },
       "cost": 0,
       "services": []
+    },
+    {
+      "id": "a26c",
+      "name": "Teste",
+      "budget": "111",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Infra"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Development"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Design"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Planning"
     }
   ]
