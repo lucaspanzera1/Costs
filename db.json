@@ -1,17 +1,6 @@
 {
   "projects": [
     {
-      "id": "90f4",
-      "name": "ArenaRental",
-      "budget": "5000",
-      "category": {
-        "id": "2",
-        "name": "Development"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
       "id": "9f15",
       "name": "AutoPrime",
       "budget": "900",

@@ -13,6 +13,10 @@
 .start{
     justify-content: flex-start;
 }
+.space{
+    justify-content: left;
+    gap: 30px;
+}
 
 .column{
     flex-direction: column;

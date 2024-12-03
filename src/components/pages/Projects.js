@@ -57,13 +57,13 @@ function Projects() {
 
     return (
         <div className={styles.Projects}>
-            <div>
+            <div className={styles.titleContainer}>
                 <h1>My Projects</h1>
                 <LinkButton to="/newproject" text="Create Project" />
             </div>
             {message && <Message type="success" msg={message} />}
             {projectMessage && <Message type="success" msg={projectMessage} />}
-            <Container customClass="start">
+            <Container customClass="space">
             {projects
                 .filter(project => project.category)
                 .map((project) => (
