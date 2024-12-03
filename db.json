@@ -8,7 +8,7 @@
         "id": "2",
         "name": "Development"
       },
-      "cost": 210,
+      "cost": 332,
       "services": [
         {
           "name": "Teste",
@@ -21,6 +21,24 @@
           "cost": "110",
           "description": "1111",
           "id": "77666ff2-d07f-4347-80e8-3c71baa02791"
+        },
+        {
+          "name": "Teste",
+          "cost": "10",
+          "description": "1111",
+          "id": "a8f1fa5d-723e-45f1-bd8b-b5d8fdc75e82"
+        },
+        {
+          "description": "1111",
+          "cost": "1",
+          "name": "Teste",
+          "id": "44a235b7-ad80-47a1-92a9-9a5ae4161b5b"
+        },
+        {
+          "name": "Teste",
+          "cost": "111",
+          "description": "1",
+          "id": "5c63d7a9-2812-461e-a8a0-0897053f77ce"
         }
       ]
     },

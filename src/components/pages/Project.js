@@ -10,6 +10,7 @@ import Container from '../layouts/Container'
 import Message from '../layouts/Message'
 import ProjectForm from '../project/ProjectForm'
 import ServiceForm  from '../service/ServiceForm'
+import ServiceCard from '../service/ServiceCard'
 
 function Project(){
 
@@ -17,7 +18,8 @@ function Project(){
     const [project, setProject] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(true)
     const [showServiceForm, setShowServiceForm] = useState(true)
-    const [message, setMessage] = useState()
+    const [services, setServices] = useState([])
+    const [message, setMessage] = useState('')
     const [type, setType] = useState()
 
     useEffect(() => {
@@ -31,6 +33,7 @@ function Project(){
          .then((resp) => resp.json())
           .then((data) => {
             setProject(data)
+            setServices(data.services || [])
           })
           .catch((err) => console.log)
       }, 300)
@@ -64,8 +67,7 @@ function Project(){
      }
 
      function createService(project) {
-      setMessage('')
-  
+      // last service
       const lastService = project.services[project.services.length - 1]
   
       lastService.id = uuidv4()
@@ -73,14 +75,14 @@ function Project(){
       const lastServiceCost = lastService.cost
   
       const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)
-
+  
       if (newCost > parseFloat(project.budget)) {
-        setMessage('Budget exceeded, check the value of the service')
+        setMessage('Budget exceeded, check the value of the service!')
         setType('error')
         project.services.pop()
         return false
       }
-
+  
       project.cost = newCost
   
       fetch(`http://localhost:5000/projects/${project.id}`, {
@@ -92,8 +94,15 @@ function Project(){
       })
         .then((resp) => resp.json())
         .then((data) => {
-          console.log(data)
+          setServices(data.services)
+          setShowServiceForm(!showServiceForm)
+          setMessage('Serviço adicionado!')
+          setType('success')
         })
+    }
+
+    function removeService(){
+
     }
   
 
@@ -148,10 +157,22 @@ function Project(){
                     </div>
                 </div>
                 <h2>Services</h2>
-                  <Container customClass="start">
-                    <p>Services Itens</p>
-                  </Container>
+                  <Container customClass="space">
+                 
+                  {services.length > 0 &&
+                services.map((service) => (
+                  <ServiceCard
+                    id={service.id}
+                    name={service.name}
+                    cost={service.cost}
+                    description={service.description}
+                    key={service.id}
+                    handleRemove={removeService}
+                  />
+                ))}
+                  {services.length === 0 && <p>There are no registered services</p>}
               </Container>
+              </Container >
             </div>
           )
           : ( 
