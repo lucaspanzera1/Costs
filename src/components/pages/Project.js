@@ -1,3 +1,5 @@
+import { parse, v4 as uuidv4 } from 'uuid'
+
 import styles from './Project.module.css'
 
 import { useParams } from 'react-router-dom'
@@ -7,6 +9,7 @@ import Loading from '../layouts/Loading'
 import Container from '../layouts/Container'
 import Message from '../layouts/Message'
 import ProjectForm from '../project/ProjectForm'
+import ServiceForm  from '../service/ServiceForm'
 
 function Project(){
 
@@ -60,6 +63,40 @@ function Project(){
         .catch(err => console.log(err))
      }
 
+     function createService(project) {
+      setMessage('')
+  
+      const lastService = project.services[project.services.length - 1]
+  
+      lastService.id = uuidv4()
+  
+      const lastServiceCost = lastService.cost
+  
+      const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)
+
+      if (newCost > parseFloat(project.budget)) {
+        setMessage('Budget exceeded, check the value of the service')
+        setType('error')
+        project.services.pop()
+        return false
+      }
+
+      project.cost = newCost
+  
+      fetch(`http://localhost:5000/projects/${project.id}`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(project),
+      })
+        .then((resp) => resp.json())
+        .then((data) => {
+          console.log(data)
+        })
+    }
+  
+
      function toggleProjectForm(){
         setShowProjectForm(!showProjectForm)
      }
@@ -103,7 +140,11 @@ function Project(){
                     {!showServiceForm ? 'Close' : 'Add a Service'}
                     </button>
                     <div className={styles.projectInfo}>
-                        { !showServiceForm && <div>Form do Servico</div>}
+                        { !showServiceForm && ( <ServiceForm 
+                          handleSubmit={createService}
+                          btnText="Add service"
+                          projectData={project}
+                        /> )}
                     </div>
                 </div>
                 <h2>Services</h2>
