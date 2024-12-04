@@ -1,6 +1,7 @@
 import styles from './Company.module.css'
 import logo from '../../img/costs_logo.png'
 import pfp from '../../img/pfp.jpg'
+import react_logo from '../../img/logo.svg'
 
 function Company() {
     return (
@@ -48,6 +49,11 @@ function Company() {
                 <footer className={styles.footer}>
                 <p>code by Lucas Panzera</p>
                 </footer>
+            </div>
+
+            <div>
+                <p className={styles.p_img}>Projeto criado com foco em aprender fundamentos em React. <img src={react_logo} alt="Lucas Panzera" className={styles.reactImage}/></p>
+                <p>Estudando com o <a href="https://youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO&si=2mS54RCKLhv6rcF0" target="_blank" >Curso de React</a> por <a href="https://www.youtube.com/@MatheusBattisti" target="_blank" >Matheus Battisti - Hora de Codar</a></p>
             </div>
     </div>
 

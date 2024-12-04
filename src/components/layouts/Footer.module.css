@@ -11,12 +11,16 @@
     list-style-type: none;
 }
 
-.socialList li{
+.socialList a{
     margin: 0 0.5em;
     transition: all 0.3s;
 }
 
-.socialList li:hover{
+.socialList a{
+    color: #4a4a4a;
+}
+
+.socialList a:hover{
     color: #fdfd96;
 }
 
