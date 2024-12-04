@@ -1,8 +1,11 @@
 # Costs 💡
 ![License](https://img.shields.io/badge/lucaspanzera-Costs-yellow) ![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)</br>
-Uma plataforma completa para gerenciar seus projetos e finanças.
+Uma plataforma para gerenciar seus projetos e finanças.
 
 ![Costs](content/header.gif)
+
+<p className={styles.p_img}>Projeto criado com foco em aprender fundamentos em React.</p>
+                <p>Estudando com o <a href="https://youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO&si=2mS54RCKLhv6rcF0" target="_blank" >Curso de React</a> por <a href="https://www.youtube.com/@MatheusBattisti" target="_blank" >Matheus Battisti - Hora de Codar</a></p>
 
 ## Tecnologias Utilizadas 🛠️
 <div align="left">
