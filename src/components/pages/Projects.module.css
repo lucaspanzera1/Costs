@@ -23,3 +23,13 @@
     margin-bottom: 2em;
 
 }
+
+@media (max-width: 768px) {
+    .Projects h1{
+        font-size: 1.5rem;
+    }
+    .titleContainer{
+        justify-content: center;
+        flex-direction: column;
+    }
+  }

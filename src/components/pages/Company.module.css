@@ -1,19 +1,107 @@
 .Company {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100vw;
     background-color: #f5f5f5;
 }
+.logo {
+    width: 500px;
+}
 
-.Company h1 {
-    font-size: 2.5rem;
-    color: #262626;
-    margin-bottom: 1rem;
+.Company h1{
+    font-size: 7rem;
+}
+.Company h2{
+    font-size: 1.4rem;
     font-weight: 300;
+}
+
+.LucasPanzera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #fafafa;
+}
+
+  .card {
+    background-color: white;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 24rem;
+    width: 100%;
     text-align: center;
-    position: relative;
-    padding-bottom: 0.5rem;
+  }
+  
+  .profileImage {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    object-fit: cover;
+    border: 1px solid #fafafa;
+    box-shadow: 0 6px 12px #b99efcab;
+  }
+  
+  .name {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .iconLink {
+    color: #666; 
+    transition: color 0.3s ease;
+  }
+  
+  .iconLink:hover {
+    color: #b99efc;
+  }
+  
+  
+  .footer {
+    margin-top: 2rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+
+@media (max-width: 1000px) {
+    .logo {
+        width: 400px;
+    }
+    
+    .Company h1{
+        font-size: 5rem;
+    }
+    .Company h2{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 768px){
+    .Company {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .logo {
+        width: 300px;
+    }
 }

@@ -1,50 +1,6 @@
 {
   "projects": [
     {
-      "id": "9f15",
-      "name": "AutoPrime",
-      "budget": "1000",
-      "category": {
-        "id": "2",
-        "name": "Development"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "1835",
-      "name": "Portfolio",
-      "budget": "15000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "f780",
-      "name": "NexusTech",
-      "budget": "1000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "a26c",
-      "name": "Teste",
-      "budget": "111",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
       "id": "bad6",
       "name": "Teste",
       "budget": "10000",

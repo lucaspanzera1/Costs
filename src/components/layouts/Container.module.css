@@ -14,10 +14,16 @@
     justify-content: flex-start;
 }
 .space{
-    justify-content: left;
-    gap: 30px;
+    justify-content: space-between;
+    
 }
 
 .column{
     flex-direction: column;
 }
+
+@media (max-width: 768px) {
+    .space{
+        gap: 20px;
+    }
+  }

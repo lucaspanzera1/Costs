@@ -8,7 +8,7 @@
 }
 
 .project_card {
-  width: 300px;
+  width: 400px;
   background-color: var(--white);
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -100,4 +100,9 @@
 
 .project_card_actions button:hover {
   color: #e74c3c;
+}
+@media (max-width: 768px) {
+  .project_card {
+    width: 300px;
+  }
 }
