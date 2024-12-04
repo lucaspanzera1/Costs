@@ -59,7 +59,7 @@ function Projects() {
         <div className={styles.Projects}>
             <div className={styles.titleContainer}>
                 <h1>My Projects</h1>
-                <LinkButton to="/newproject" text="Create Project" />
+                <LinkButton customClass={styles.btnProjects} to="/newproject" text="Create Project"/>
             </div>
             {message && <Message type="success" msg={message} />}
             {projectMessage && <Message type="success" msg={projectMessage} />}
