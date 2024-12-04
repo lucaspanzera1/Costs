@@ -96,7 +96,7 @@ function Project(){
         .then((data) => {
           setServices(data.services)
           setShowServiceForm(!showServiceForm)
-          setMessage('Serviço adicionado!')
+          setMessage('Added service!')
           setType('success')
         })
     }

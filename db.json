@@ -6,6 +6,132 @@
       "budget": "10000",
       "cost": 0,
       "services": []
+    },
+    {
+      "id": "c01e",
+      "name": "Skyline Infra",
+      "budget": "500",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "5618",
+      "name": "AppTrack",
+      "budget": "35000",
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "b129",
+      "name": "NovaEra Branding",
+      "budget": "1200",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "56af",
+      "name": "PlanMaster 2030",
+      "budget": "800",
+      "category": {
+        "id": "4",
+        "name": "Planning"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "c84b",
+      "name": "Future Grid",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "budget": "7000",
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "8e88",
+      "name": "CodeNova",
+      "budget": "50000",
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "e485",
+      "name": "VisualDreams",
+      "budget": "20000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "e8c1",
+      "name": "FiberLink Expansion",
+      "budget": "10000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "ed35",
+      "name": "DevNTZ",
+      "budget": "700000",
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 610000,
+      "services": [
+        {
+          "name": "RESTful API Development",
+          "cost": "120000",
+          "description": "Creation of scalable and secure RESTful APIs for system integration, ensuring high performance and complete documentation.",
+          "id": "bc77f898-bdfe-42e0-98c6-ce447ce59860"
+        },
+        {
+          "name": "Mobile Development",
+          "description": "Development of native mobile applications for iOS and Android, optimized for high performance and flawless user experience (UX).",
+          "cost": "180000",
+          "id": "95886634-f4a5-480d-a2f6-1060fde648b9"
+        },
+        {
+          "name": "Cloud Migration",
+          "description": "Planning and execution of local systems migration to cloud platforms, including AWS, Azure, and Google Cloud, with post-migration support.",
+          "cost": "100000",
+          "id": "a286af86-793c-431a-b498-ad62249cea1b"
+        },
+        {
+          "name": "System Maintenance",
+          "cost": "200000",
+          "description": "Continuous technical support and regular updates to ensure the stability and security of already implemented systems.",
+          "id": "2f35ae9f-48eb-4478-a86f-eb74a693a198"
+        },
+        {
+          "name": "E-commerce Development",
+          "cost": "10000",
+          "description": "Creation of customized online stores.",
+          "id": "06e855aa-18df-4f21-9cbf-64dd16549c91"
+        }
+      ]
     }
   ],
   "categories": [
