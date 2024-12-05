@@ -15,8 +15,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Rotas com Navbar e Footer */}
-        <Route path="/" element={
+        {}
+        <Route path="/Home" element={
           <>
             <Navbar />
             <Container customClass="min-height">
@@ -69,8 +69,8 @@ function App() {
           </>
         } />
 
-        {/* Rota de Login sem Navbar e Footer */}
-        <Route path="/login" element={<Login />} />
+        {}
+        <Route path="/" element={<Login />} />
       </Routes>
     </Router>
   );

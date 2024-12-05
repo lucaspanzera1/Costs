@@ -16,12 +16,12 @@ function Navbar() {
     return (
         <nav className={styles.navbar}>
             <div className={styles.navContainer}>
-                <Link to="/" className={styles.logoContainer}>
+                <Link to="/Home" className={styles.logoContainer}>
                     <img src={logo} alt="Costs" className={styles.logo} />
                 </Link>
 
                 <ul className={styles.desktopMenu}>
-                    <li className={styles.item}><Link to="/">Home</Link></li>
+                    <li className={styles.item}><Link to="/Home">Home</Link></li>
                     <li className={styles.item}><Link to="/projects">Projects</Link></li>
                     <li className={styles.item}><Link to="/company">Company</Link></li>
                     <li className={styles.item}><Link to="/newproject">New Project</Link></li>
