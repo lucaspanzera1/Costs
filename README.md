@@ -3,7 +3,7 @@
 Uma plataforma para gerenciar seus projetos e finanças.
 
 ![Costs](content/header.gif)
-###### ⚒️Sei que não e possível testar com o link do vercel, ele não esta conectando ao Banco de Dados!  Caso rodar localmente funciona perfeitamente!⚒️
+###### ⚒️Sei que não e possível testar com o link do vercel, ele não esta conectando ao Banco de Dados!  Caso rodar localmente, o sistema roda perfeitamente!⚒️
 
 <p className={styles.p_img}>Projeto criado com foco em aprender fundamentos em React.</p>
                 <p>Estudando com o <a href="https://youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO&si=2mS54RCKLhv6rcF0" target="_blank" >Curso de React</a> por <a href="https://www.youtube.com/@MatheusBattisti" target="_blank" >Matheus Battisti - Hora de Codar</a></p>
@@ -62,9 +62,9 @@ npm run backend
 ```
 
 ## ✅ Features Futuras
-### Informações serem buscadas por meio de um banco de dados ( Firebase, MongoDB, etc)
-### Projetos serem por usuário
-### Registro e Login
+#### - Informações serem buscadas por meio de um banco de dados ( Firebase, MongoDB, etc)
+#### - Projetos serem por usuário
+#### - Registro e Login
 
 # Sobre mim 👋
 Desenvolvedor em início de carreira.
