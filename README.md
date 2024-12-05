@@ -7,6 +7,24 @@ Uma plataforma para gerenciar seus projetos e finanças.
 <p className={styles.p_img}>Projeto criado com foco em aprender fundamentos em React.</p>
                 <p>Estudando com o <a href="https://youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO&si=2mS54RCKLhv6rcF0" target="_blank" >Curso de React</a> por <a href="https://www.youtube.com/@MatheusBattisti" target="_blank" >Matheus Battisti - Hora de Codar</a></p>
 
+### Funcionalidades 📱
+#### Criar & excluir projetos  📝✅❌
+
+![Costs](content/gif1.gif)
+
+#### Editar informações dos projetos ⚒️
+
+![Costs](content/gif2.gif)
+
+#### Criar & excluir serviços  💼✅❌
+
+![Costs](content/gif3.gif)
+
+#### Você não consegue adicionar um serviço caso o valor de orçamento do projeto for preenchido ⚠️
+
+![Costs](content/gif4.gif)
+
+
 ## Tecnologias Utilizadas 🛠️
 <div align="left">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -41,3 +59,15 @@ npm start
 # Inicie o backend
 npm run backend
 ```
+
+## ✅ Features Futuras
+### Informações serem buscadas por meio de um banco de dados ( Firebase, MongoDB, etc)
+### Projetos serem por usuário
+### Registro e Login
+
+# Sobre mim 👋
+Desenvolvedor em início de carreira.
+
+- [LinkedIn](https://www.linkedin.com/in/lucas-panzera/)
+- [GitHub](https://github.com/lucaspanzera1)
+- Contato: lucassouzapanzera@gmail.com
