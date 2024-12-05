@@ -3,11 +3,12 @@
 Uma plataforma para gerenciar seus projetos e finanças.
 
 ![Costs](content/header.gif)
+⚒️ <b>Trabalhando nisso!<b> Sei que não e possível testar com o link do vercel, ele não esta conectando ao Banco de Dados ⚒️
 
 <p className={styles.p_img}>Projeto criado com foco em aprender fundamentos em React.</p>
                 <p>Estudando com o <a href="https://youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO&si=2mS54RCKLhv6rcF0" target="_blank" >Curso de React</a> por <a href="https://www.youtube.com/@MatheusBattisti" target="_blank" >Matheus Battisti - Hora de Codar</a></p>
 
-### Funcionalidades 📱
+## Funcionalidades 📱
 #### Criar & excluir projetos  📝✅❌
 
 ![Costs](content/gif1.gif)
