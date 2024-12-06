@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('../../img/login.png') no-repeat center center;
-                
+    background:
+                url('../../img/background.login.png') no-repeat center right;
+    background-size: 40%;                 
 }
 .container {
     display: flex;
@@ -83,6 +83,7 @@
         align-content: center;
         justify-content: center;
         height: 100vh;
+        background-size: 0%;
     }
     .container {
         height: 60vh;
