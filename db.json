@@ -132,6 +132,24 @@
           "id": "06e855aa-18df-4f21-9cbf-64dd16549c91"
         }
       ]
+    },
+    {
+      "id": "53bd",
+      "name": "Davi",
+      "budget": "200",
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 100,
+      "services": [
+        {
+          "name": "Figma",
+          "cost": "100",
+          "description": "ADADADADADA",
+          "id": "34110867-ecf5-4858-ab53-5fa3eaed7415"
+        }
+      ]
     }
   ],
   "categories": [

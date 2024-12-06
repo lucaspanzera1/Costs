@@ -6,6 +6,7 @@ import NewProject from './components/pages/NewProject';
 import Projects from './components/pages/Projects';
 import Project from './components/pages/Project';
 import Login from './components/pages/Login';
+import FirebaseLoginSystem from './components/pages/FirebaseLoginSystem';
 
 import Container from './components/layouts/Container';
 import Navbar from './components/layouts/Navbar';
@@ -71,6 +72,7 @@ function App() {
 
         {}
         <Route path="/" element={<Login />} />
+        <Route path="/Login" element={<FirebaseLoginSystem />} />
       </Routes>
     </Router>
   );

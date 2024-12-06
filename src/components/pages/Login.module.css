@@ -67,6 +67,9 @@
     cursor: pointer;
     transition: 0.6s;
   }
+  a{
+    text-decoration: none;
+  }
 
   .loginButton:hover{
     background-color: #C8BBBB;
