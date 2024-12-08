@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './FirebaseLoginSystem.module.css'
 import { initializeApp } from 'firebase/app';
 import { 
   getAuth, 
@@ -7,7 +8,6 @@ import {
   signOut 
 } from 'firebase/auth';
 
-// Configuração do Firebase (substitua com suas credenciais)
 const firebaseConfig = {
     apiKey: "AIzaSyCfh7hUfM4eSpCmXxEWK_TtdbnuY-liIzQ",
     authDomain: "costs-85eed.firebaseapp.com",
@@ -18,7 +18,6 @@ const firebaseConfig = {
     measurementId: "G-7H178CC3WB"
 };
 
-// Inicializar Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
@@ -36,14 +35,14 @@ const FirebaseLoginSystem = () => {
     try {
       let userCredential;
       if (isNewUser) {
-        // Criar novo usuário
+        
         userCredential = await createUserWithEmailAndPassword(
           auth, 
           email, 
           password
         );
       } else {
-        // Login de usuário existente
+        
         userCredential = await signInWithEmailAndPassword(
           auth, 
           email, 
@@ -71,127 +70,80 @@ const FirebaseLoginSystem = () => {
 
   if (user) {
     return (
-      <div style={{
-        maxWidth: '400px',
-        margin: '2rem auto',
-        padding: '1rem',
-        border: '1px solid #ccc',
-        borderRadius: '8px'
-      }}>
+      <div>
         <h2>Usuário Logado</h2>
         <p>Email: {user.email}</p>
-        <button 
-          onClick={handleLogout}
-          style={{
-            width: '100%',
-            padding: '0.5rem',
-            backgroundColor: '#f44336',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer'
-          }}
-        >
-          Logout
-        </button>
+        <button>Logout</button>
       </div>
     );
   }
 
   return (
-    <div style={{
-      maxWidth: '400px',
-      margin: '2rem auto',
-      padding: '1rem',
-      border: '1px solid #ccc',
-      borderRadius: '8px'
-    }}>
-      <h2>{isNewUser ? 'Criar Conta' : 'Login'}</h2>
-      <form onSubmit={handleAuthentication}>
-        <div style={{ marginBottom: '1rem' }}>
-          <label 
-            htmlFor="email"
-            style={{ display: 'block', marginBottom: '0.5rem' }}
-          >
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Digite seu email"
-            required
-            style={{
-              width: '100%',
-              padding: '0.5rem',
-              marginBottom: '1rem',
-              border: '1px solid #ccc',
-              borderRadius: '4px'
-            }}
-          />
-        </div>
-        <div style={{ marginBottom: '1rem' }}>
-          <label 
-            htmlFor="password"
-            style={{ display: 'block', marginBottom: '0.5rem' }}
-          >
-            Senha
-          </label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Digite sua senha"
-            required
-            style={{
-              width: '100%',
-              padding: '0.5rem',
-              marginBottom: '1rem',
-              border: '1px solid #ccc',
-              borderRadius: '4px'
-            }}
-          />
-        </div>
-        {error && (
-          <p style={{ color: 'red', marginBottom: '1rem' }}>{error}</p>
-        )}
-        <button 
-          type="submit"
-          style={{
-            width: '100%',
-            padding: '0.5rem',
-            backgroundColor: '#4CAF50',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            marginBottom: '1rem',
-            cursor: 'pointer'
-          }}
-        >
+    <div className={styles.container}>
+      <div className={styles.formWrapper}>
+        <h2 className={styles.title}>
           {isNewUser ? 'Criar Conta' : 'Login'}
-        </button>
-        <button 
-          type="button"
-          onClick={() => setIsNewUser(!isNewUser)}
-          style={{
-            width: '100%',
-            padding: '0.5rem',
-            backgroundColor: '#2196F3',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer'
-          }}
-        >
-          {isNewUser 
-            ? 'Já tem conta? Faça login' 
-            : 'Criar nova conta'}
-        </button>
-      </form>
+        </h2>
+        <form onSubmit={handleAuthentication} className={styles.form}>
+          <div className={styles.inputGroup}>
+            <label 
+              htmlFor="email" 
+              className={styles.label}
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              className={styles.input}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Digite seu email"
+              required
+            />
+          </div>
+          <div className={styles.inputGroup}>
+            <label 
+              htmlFor="password" 
+              className={styles.label}
+            >
+              Senha
+            </label>
+            <input
+              type="password"
+              id="password"
+              className={styles.input}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Digite sua senha"
+              required
+            />
+          </div>
+          {error && (
+            <p className={styles.errorMessage}>{error}</p>
+          )}
+          <div className={styles.buttonGroup}>
+            <button 
+              type="submit" 
+              className={styles.primaryButton}
+            >
+              {isNewUser ? 'Criar Conta' : 'Login'}
+            </button>
+            <button 
+              type="button"
+              className={styles.secondaryButton}
+              onClick={() => setIsNewUser(!isNewUser)}
+            >
+              {isNewUser 
+                ? 'Já tem conta? Faça login' 
+                : 'Criar nova conta'}
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
+
 
 export default FirebaseLoginSystem;
