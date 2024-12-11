@@ -1,5 +1,5 @@
 # Costs 💡
-![License](https://img.shields.io/badge/lucaspanzera-Costs-yellow) ![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)</br>
+![License](https://img.shields.io/badge/lucaspanzera-Costs-yellow) ![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Finalizado-yellow)</br>
 Uma plataforma para gerenciar seus projetos e finanças.
 
 ![Costs](content/header.gif)
@@ -60,11 +60,6 @@ npm start
 # Inicie o backend
 npm run backend
 ```
-
-## ✅ Features Futuras
-#### - Informações serem buscadas por meio de um banco de dados ( Firebase, MongoDB, etc)
-#### - Projetos serem por usuário
-#### - Registro e Login
 
 # Sobre mim 👋
 Desenvolvedor em início de carreira.
